@@ -1,0 +1,50 @@
+let array = [
+86,
+84,
+1006,
+170,
+165,
+938,
+965,
+495,
+963,
+961,
+962,
+744,
+273,
+87,
+851,
+803,
+346,
+528,
+529,
+433,
+62,
+721,
+720,
+692,
+690,
+683,
+681,
+533,
+640,
+310,
+639,
+142,
+638,
+635,
+637,
+252,
+544,
+512,
+292,
+612,
+47,
+610
+]
+array.map(ar => {
+    console.log(`INSERT INTO public."userReward"(
+        "isActive", "createdBy", "updatedBy", "createdAt", "updatedAt", "userId", "rwrdRulesId", "rwrdId", "rewardPoint", "rewardValue", "statusId", "spnValue")
+        VALUES (true, ${ar}, ${ar}, NOW(), NOW(), ${ar}, '9ede2803-e8d0-40df-aa16-8d151415666c', 'b22b5957-bd17-4bad-9860-8187b6329eca', 200.000000000000000000000000000000, 0.010000000000000000000000000000, 1, 0.000000000000000000000000000000);`)
+});
+
